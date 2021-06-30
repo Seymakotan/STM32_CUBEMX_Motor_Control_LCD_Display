@@ -1,0 +1,27 @@
+--cpu=Cortex-M4.fp
+"staj_dc_lcd\startup_stm32f407xx.o"
+"staj_dc_lcd\stm_my_lcd16x2.o"
+"staj_dc_lcd\main.o"
+"staj_dc_lcd\stm32f4xx_it.o"
+"staj_dc_lcd\stm32f4xx_hal_msp.o"
+"staj_dc_lcd\stm32f4xx_hal_adc.o"
+"staj_dc_lcd\stm32f4xx_hal_adc_ex.o"
+"staj_dc_lcd\stm32f4xx_hal_tim.o"
+"staj_dc_lcd\stm32f4xx_hal_tim_ex.o"
+"staj_dc_lcd\stm32f4xx_hal_rcc.o"
+"staj_dc_lcd\stm32f4xx_hal_rcc_ex.o"
+"staj_dc_lcd\stm32f4xx_hal_flash.o"
+"staj_dc_lcd\stm32f4xx_hal_flash_ex.o"
+"staj_dc_lcd\stm32f4xx_hal_flash_ramfunc.o"
+"staj_dc_lcd\stm32f4xx_hal_gpio.o"
+"staj_dc_lcd\stm32f4xx_hal_dma_ex.o"
+"staj_dc_lcd\stm32f4xx_hal_dma.o"
+"staj_dc_lcd\stm32f4xx_hal_pwr.o"
+"staj_dc_lcd\stm32f4xx_hal_pwr_ex.o"
+"staj_dc_lcd\stm32f4xx_hal_cortex.o"
+"staj_dc_lcd\stm32f4xx_hal.o"
+"staj_dc_lcd\system_stm32f4xx.o"
+--library_type=microlib --strict --scatter "STAJ_DC_LCD\STAJ_DC_LCD.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "STAJ_DC_LCD.map" -o STAJ_DC_LCD\STAJ_DC_LCD.axf
